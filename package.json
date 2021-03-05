@@ -13,7 +13,7 @@
     "lint": "eslint \"./packages/**/src/*.{js,jsx,ts,tsx}\"",
     "test": "lerna run test --stream",
     "build": "lerna run build --stream",
-    "start": "lerna run start"
+    "start": "lerna run start --stream"
   },
   "keywords": [
     "React",
