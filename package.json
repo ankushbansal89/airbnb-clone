@@ -9,16 +9,17 @@
   ],
   "scripts": {
     "bootstrap": "lerna clean -y && lerna bootstrap --hoist",
-    "format": "prettier \"{packages}/**/src/*.{js,ts,html}\" --write",
+    "format": "prettier \"./packages/**/src/*.{js,tsx,ts,html}\" --write",
     "lint": "eslint \"./packages/**/src/*.{js,jsx,ts,tsx}\"",
     "test": "lerna run test --stream",
     "build": "lerna run build --stream",
-    "start": "lerna run start --stream"
+    "start": "lerna run start --stream",
+    "prepare": "husky install"
   },
   "keywords": [
     "React",
     "graphql",
-    "appollo",
+    "apollo",
     "serverless",
     "airbnb"
   ],
@@ -40,15 +41,6 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^5.1.3",
     "lerna": "^4.0.0",
-    "lint-staged": "^10.5.4",
     "prettier": "^2.2.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*": "npm run lint && npm run format"
   }
 }
