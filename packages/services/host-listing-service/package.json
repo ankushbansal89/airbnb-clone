@@ -1,0 +1,12 @@
+{
+  "name": "@airbnb-clone/host-listing-service",
+  "version": "1.0.0",
+  "description": "Serverless graphql lambda service to create, update & delete a property listing by a host",
+  "private": "true",
+  "main": "src/handler.tsx",
+  "scripts": {
+    "deploy": "serverless deploy",
+    "start": "serverless offline"
+  },
+  "license": "MIT"
+}

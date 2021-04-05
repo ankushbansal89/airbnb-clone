@@ -8,7 +8,7 @@
     "./packages/**"
   ],
   "scripts": {
-    "bootstrap": "lerna clean -y && lerna bootstrap --hoist",
+    "bootstrap": "lerna clean -y && lerna bootstrap",
     "format": "prettier \"./packages/**/src/*.{js,tsx,ts,html}\" --write",
     "lint": "eslint \"./packages/**/src/*.{js,jsx,ts,tsx}\"",
     "test": "lerna run test --stream",
@@ -25,6 +25,12 @@
   ],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "apollo-server-lambda": "^2.16.1",
+    "graphql": "^15.3.0",
+    "serverless-bundle": "^4.2.2",
+    "serverless-offline": "^6.9.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.13.8",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
