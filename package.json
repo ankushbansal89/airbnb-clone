@@ -14,6 +14,7 @@
     "test": "lerna run test --stream",
     "build": "lerna run build --stream",
     "start": "lerna run start --stream",
+    "deploy": "lerna run deploy --stream",
     "prepare": "husky install",
     "ts-coverage": "typescript-coverage-report"
   },
