@@ -10,7 +10,6 @@ const server = new ApolloServer({
   playground: true,
   introspection: true,
   context: async (_event: any, context: any): Promise<any> => {
-    console.log(process.env.MONGODB_URI);
     await connect(process.env.MONGODB_URI, {
       useUnifiedTopology: true,
       useNewUrlParser: true,
